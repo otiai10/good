@@ -1,0 +1,2 @@
+defmodule Good do
+end
