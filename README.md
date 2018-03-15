@@ -1,5 +1,7 @@
 # Good
 
+[![Build Status](https://travis-ci.org/otiai10/good.svg?branch=master)](https://travis-ci.org/otiai10/good)
+
 Module `Good` enable you **Early Return** like error handling, by falling through.
 
 ```elixir
