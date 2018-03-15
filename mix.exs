@@ -4,10 +4,10 @@ defmodule Good.Mixfile do
   def project do
     [app: :good,
      version: "0.0.1",
-     elixir: "~> 1.1",
+     elixir: "~> 1.6",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps()]
   end
 
   # Configuration for the OTP application
