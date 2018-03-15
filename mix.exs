@@ -11,11 +11,18 @@ defmodule Good.Mixfile do
       package: [
         licenses:    ["MIT"],
         maintainers: ["Hiromu OCHIAI<otiai10@gmail.com>"],
-        links:       ["https://github.com/otiai10/good"],
+        links: %{
+          "GitHub" => "https://github.com/otiai10/good"
+        }
       ],
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps(),
+      docs: [
+        extras: ["README.md"],
+      ],
+      source_url: "https://github.com/otiai10/good",
+      homepage_url: "https://github.com/otiai10/good",
     ]
   end
 
@@ -36,6 +43,6 @@ defmodule Good.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:ex_doc, ">= 0.0.0", only: :dev}]
   end
 end
