@@ -2,12 +2,21 @@ defmodule Good.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :good,
-     version: "0.0.2",
-     elixir: "~> 1.6",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     deps: deps()]
+    [
+      app: :good,
+      name: :good,
+      version: "0.0.2",
+      elixir: "~> 1.6",
+      description: "Early Return like syntax for Elixir",
+      package: [
+        licenses:    ["MIT"],
+        maintainers: ["Hiromu OCHIAI<otiai10@gmail.com>"],
+        links:       ["https://github.com/otiai10/good"],
+      ],
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
+      deps: deps(),
+    ]
   end
 
   # Configuration for the OTP application
